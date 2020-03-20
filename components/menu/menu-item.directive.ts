@@ -74,6 +74,7 @@ export class NzMenuItemDirective implements OnInit, OnChanges, OnDestroy, AfterC
   setSelectedState(value: boolean): void {
     this.nzSelected = value;
     this.selected$.next(value);
+    console.log('xxx');
   }
 
   private updateRouterActive(): void {
